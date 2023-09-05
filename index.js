@@ -5,8 +5,8 @@ const initialTop = $("#box").css("top").slice(0,-2);
 
 let newLeft = parseInt(initialLeft);
 let newTop = parseInt(initialTop);
-let yDiff = 2*Math.random() + 1; //random value between 1 and 3
-let xDiff = Math.sqrt(10 - yDiff*yDiff);
+let yDiff = Math.random() + 1; //random value between 1 and 2
+let xDiff = Math.sqrt(5 - yDiff*yDiff); //random value between 1 and 2
 
 const loop = setInterval(moveBox, 1);
 
