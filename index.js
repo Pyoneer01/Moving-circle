@@ -1,4 +1,4 @@
-
+$(document).ready( function (){
 const boxWidth = parseInt($("#box").css("width").slice(0,-2));
 const initialLeft = $("#box").css("left").slice(0,-2);
 const initialTop = $("#box").css("top").slice(0,-2);
@@ -21,4 +21,5 @@ function moveBox(){
     newTop = newTop + yDiff;
     $("#box").css("left", newLeft);
     $("#box").css("top", newTop);
-}
+};
+});
