@@ -11,10 +11,10 @@ let xDiff = Math.sqrt(10 - yDiff*yDiff);
 const loop = setInterval(moveBox, 1);
 
 function moveBox(){
-    if(newLeft + boxWidth + 2 >= innerWidth || newLeft < initialLeft){
+    if(newLeft + boxWidth + 10 >= innerWidth || newLeft < initialLeft){
         xDiff *= -1;
     }
-    if(newTop + boxWidth + 2 >= innerHeight || newTop < 10){
+    if(newTop + boxWidth + 10 >= innerHeight || newTop < 10){
         yDiff *= -1;
     }
     newLeft = newLeft + xDiff;
